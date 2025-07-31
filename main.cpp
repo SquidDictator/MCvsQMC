@@ -86,7 +86,7 @@ std::vector<double> uniform_to_normal(const std::vector<double>& u) {
 
 int main() {
     // Option Parameters (can be changed)
-    double S0 = 100.0, K = 100.0, r = 0.05, sigma = 0.2, T = 1.0;
+    double S0 = 100.0, K = 100.0, r = 0.05, sigma = 0.5, T = 1.0; //sigma 0.5 - market far more volatile
     double analytic_call = bs_call(S0, K, r, sigma, T);
 
     // For error checking
